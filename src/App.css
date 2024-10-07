@@ -1,0 +1,351 @@
+#jazz{
+    font-size: 15px;
+    color: black;
+}
+body{
+    background-color: transparent;
+}
+
+#front {
+    position: relative;
+    background-image: url("https://freshstartcleaningtricities.com/wp-content/uploads/2024/04/pexels-rdne-4921525-1024x683.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    filter: blur(8px)
+}
+#carouselExampleFade{
+    background-color: transparent;
+}
+#bantext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+    filter: drop-shadow(2px 2px 20px rgb(0, 0, 0));
+
+}
+
+nav{
+background-color: rgba(173, 157, 157, 0.597);
+}
+#li{
+    cursor: pointer;
+}
+.heading{
+    font-size: 40px;
+    color: rgb(0, 0, 0);    
+}
+.cdiv{
+    display: flex;
+}
+.ccdiv{
+    flex-basis: 100%;
+    padding: 5px;
+}
+.cimg{
+    height: 500px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 1s;
+    &:hover{
+        padding:0px;
+        transition: 0.6s;
+    }
+}
+.cctext{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(0,0,0,0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.serimg{
+    height: 350px;
+    padding: 5px;
+    border-radius: 15px;
+    border:ridge 1px rgb(1, 1, 1);
+    transition: 1s;
+    &:hover{
+        padding:0px;
+        transition: 0.6s;
+    }
+}
+.car2{
+    border-radius: 20px;
+}
+#p1{
+    color: white;
+    text-align: justify;
+}
+.p2{
+    font-family: "Manrope", sans-serif;
+    padding-right: 10px;
+text-align: justify;
+}
+.p3{
+    font-family: "Manrope", sans-serif;
+    text-align: justify;
+}
+.ps{
+    text-align: justify;
+}
+.b1{
+    font-size: 30px
+}
+#srbutton,#srbutton2{
+    color: #000000;
+    background-color: rgb(163, 164, 167);
+    &:hover{
+        background-color: rgb(136, 134, 134);
+    }
+}
+
+/* flip */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: rgb(0, 0, 0);
+  }
+  
+  .flip-card-back {
+    background-color: #040404;
+    color: white;
+    transform: rotateY(180deg);
+  }
+/* from youtube */
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imgg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the images cover the entire area without distortion */
+    display: block;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.image:hover .content {
+    opacity: 1;
+}
+
+.content h4 {
+    font-size: 30px; /* Adjusted font size to fit better within the container */
+    color: #ffffff;
+    margin-bottom: 10px;    
+}
+#c{
+    cursor: pointer;
+}
+
+/* end */
+.icon{
+    font-size: 25px;
+    padding-left: 3px;
+}
+.map{
+    height: 450px;
+}
+@media only screen and (max-device-width: 1024px) {
+        .bantext{
+            font-size: 25px;
+            text-align: center;    
+            padding-top: 3px;
+            padding-bottom: 5px;
+            top: 45%;
+            left:14%;     
+        }
+        #heading{
+            font-size: 20px;   
+}
+#banner img{
+    height: 350px;
+}
+.cimg{
+    height: 200px;
+}
+#spanp1{
+    display: none;
+}
+#p1{
+    padding-top:2px;
+    padding-bottom:2px;
+}
+.p2{
+    display: none;
+}
+.p3{
+    display: none;
+}
+.b1{
+    font-size: 20px
+
+}
+.serimg{
+    height: 200px;
+}
+.content h4{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;    
+}
+.content p{
+    display: none;
+}
+.image {
+    height: 120px; 
+}
+.content{
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    height: 250px;
+}
+.heading{
+    font-size: 25px;
+}
+}
+@media only screen and (min-device-width: 1024px) {
+    .flip{
+        display: none;
+    }
+}
+@media only screen and (max-device-width: 1024px) {
+    .service{
+        display: none;
+    }
+}
+
+/* next page */
+.contact-card {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.company-logo img {
+    width: 150px;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.contact-info h2 {
+    color: #000000;
+    font-weight: bold;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-item {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    &:hover{
+        background-color: #000000;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+    #bantext{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+    }
+    #bantext{
+        font-size: 35px;
+    }
+}
+.ss{
+    font-size: 25px;
+}
